@@ -1,0 +1,43 @@
+.container-fluid{
+    width: 100%;
+    padding: 6%;
+    height: 100vh;
+    background-image: url("https://olianijr.com.br/wp-content/uploads/2017/02/fundo-site.jpg");
+
+}
+.form-redefinir{
+    max-width: 400px;
+    padding: 20px;
+    margin:auto;
+    background-color: white;
+}
+.msg{
+    max-height: 0.01em;
+    max-width: 100%;
+    margin:auto ;
+    padding: 1px;
+    margin-bottom: 50px;
+}
+.link-opcoes a{
+    text-decoration: none;
+    color: black;   
+}
+.link-opcoes a:hover{
+    color: rgb(73, 73, 92);
+    transition: .3s ease-in;
+}
+.link-opcoes{
+    text-align: center;
+}
+.msg-text{
+    font-size: 0.7em;
+}
+.form-redefinir h4{
+    margin-bottom: 50px;
+}
+.form-redefinir input, button{
+    max-width: 85%;
+    margin: auto 25px ;
+}
+
+

@@ -1,0 +1,43 @@
+.formClientes{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    max-height: 100%;
+    margin: 0 auto ;
+    max-width: 100%;
+    color: white;
+    background-color:#98a0aa ;
+    position: relative;  
+}
+.formClientes  th{
+    margin: auto;
+    padding: 8px 10px;
+    min-width: 100%;
+    width: 100vh;
+}
+.btn-cliente{
+    margin: 0;
+    top:65px;
+    max-width: 120px;
+    width: 120px;
+    height: auto;
+    right:0;
+    background-color: #3d8afc;
+    color: white;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+@media (max-width: 950px){
+    .formClientes th ,td{
+        padding:10px 10px;   
+    } 
+}
+@media (max-width:  750px){
+    .formClientes th ,td {
+        padding:8px 6px;
+        font-size: 12px;   
+    }
+        
+}

@@ -1,0 +1,84 @@
+
+.container-fluid{
+    width: 100%;
+    padding: 4%;
+    height: 100vh;
+    background-image: url("https://olianijr.com.br/wp-content/uploads/2017/02/fundo-site.jpg");
+}
+.form-login{
+    max-width: 380px;
+    padding:80px 25px ;
+    margin:auto;
+    background-color: white;
+    position: relative;
+    top:-30px;
+    max-height: 100%;
+    min-height: 490px;
+}
+.msg-login{
+    max-height: 0.01em;
+    max-width: 100%;
+    margin:auto ;
+    padding:auto 1px;
+    position: relative;
+}
+.logo-login{
+    background-repeat: no-repeat;
+    height: 45px;
+    max-width: 100%;
+    width: auto;
+    margin:auto;
+    position: absolute;
+    left: 110px;
+    right: auto;
+    bottom: 0px;
+    top: 40px;
+}
+.h3-login{
+    margin-top: 50px;
+    position: relative;
+}
+.login-logo{
+    margin: auto;
+    width: auto;
+    position: relative;
+    bottom: 50px;
+    height: auto;
+}
+.registrar{
+    text-align: center;    
+}
+.link-opcoes a{
+    text-decoration: none;
+    color: black;   
+}
+.link-opcoes a:hover{
+    color: rgb(73, 73, 92);
+    transition: .3s ease-in;
+}
+.link-opcoes{
+    text-align: center;
+}
+
+.btn-login{
+    position: relative;
+    margin-top: 12px;
+    width: 100%;
+    left: 2px;
+}
+.form-login input, button{
+    max-width: 90%;
+    margin: auto 20px ;
+}
+.form-login label{
+    margin: auto 25px;
+}
+
+@media (max-width:600px){
+    .form-login{
+        top:0;
+    }
+    .logo{
+        bottom: 25px;
+    }
+}

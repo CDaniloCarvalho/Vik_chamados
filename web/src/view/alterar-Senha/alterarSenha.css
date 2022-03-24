@@ -1,0 +1,50 @@
+.alterarSenha{
+    max-width:100%;
+    width:90%;
+    height: auto;
+    position:relative;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    color: white;
+    background-color:white ;
+    box-shadow: rgba(153, 151, 151, 0.24) 0px 3px 8px;
+    border-radius: 1%;
+    padding:15px 30px ;
+    padding-bottom: 80px ;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.alterarSenha label{
+    text-align: left;
+}
+.editar-usuario{
+    width: 100px;
+    margin: 50px 10px;
+    font-size: 18px;
+    padding: 4px 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+@media (max-width: 950px){
+    .alterarSenha{ 
+        margin: auto;
+        margin-top: 30px;
+        width:100%;
+    }
+}
+@media (max-width:  600px){
+    
+    .alterarSenha{
+        margin-top: 40px;
+        padding-bottom: 70px;
+    }
+    .editar-usuario{
+        width: 100px;
+        margin: 50px auto;
+    }
+}
+@media (max-width:  350px){
+   
+    .alterarSenha{
+        margin-top:80px;
+        font-size: 13px;
+    } 
+}

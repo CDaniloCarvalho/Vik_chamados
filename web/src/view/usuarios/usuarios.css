@@ -1,0 +1,28 @@
+
+
+.visualizar{
+    float: right;
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+}
+.visualizar-editar{
+    float: right;
+    position: relative;
+    left:425px;
+    bottom: 45px;
+}
+.btn-usuario{
+    margin: 0;
+    top:80px;
+    max-width: 120px;
+    width: 120px;
+    height: auto;
+    right:0;
+    background-color: #3d8afc;
+    color: white;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+

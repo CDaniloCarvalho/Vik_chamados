@@ -1,0 +1,642 @@
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: rgb(197, 190, 190);
+    border-left: 1px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #91999e
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #555151
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    background-image: url("https://olianijr.com.br/wp-content/uploads/2017/02/fundo-site.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    min-height: auto; 
+    max-width: 100%;
+    margin: 0;
+}
+.main{  
+    max-width:100%;
+    width:90%;
+    height: auto;
+    min-height: 800px;
+    position:relative;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    color: white;
+    background-color:#f5f1f16b ;
+    box-shadow: rgba(153, 151, 151, 0.404) 0px 3px 8px;
+    padding:5px 30px ;
+    padding-bottom: 100px ;
+    margin-left: 190px;
+}
+.form{
+    text-align: center;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    margin: 0 auto ;
+    max-width: 100%;
+    min-width: 100%;
+    color: black;
+    background-color:white ;
+    position: relative;  
+    table-layout:fixed;
+    top: -7px;
+    z-index: 1;
+}
+.form tr{
+    border: 1px solid rgba(0, 0, 0, 0.582);
+}
+h3{
+    position: relative;
+    top:10px;
+}
+.main2 {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    max-height: 80%;
+    height: auto;
+    overflow: auto;
+    top: 70px;
+}
+th{
+    position: sticky;
+    top: 0;
+    z-index: 2; 
+}
+.mensagem{
+    position: fixed;
+    z-index: 5;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    left: 33%;
+    text-align: center;
+    top:150px;
+}
+.mensagem i{
+    margin-top: 30px;
+}
+.modal-chamados{
+    width: 800px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    background-color: white; 
+}
+.modal-backdrop {
+    background-color:rgba(0, 0, 0, 0.719) !important;
+}
+.modal-dialog{
+    height: auto;
+    min-height: 100%;
+    overflow: auto;
+}
+.btn-novo{
+    margin: 0;
+    margin-top: 30px;
+    max-width: 120px;
+    width: 120px;
+    height: auto;
+    right:0;
+    background-color: #3d8afc;
+    color: white;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn-chamados{
+    margin: 0;
+    margin-top: 30px;
+    max-width: 220px;
+    width: 220px;
+    height: auto;
+    right:0;
+    background-color: #3d8afc;
+    color: white;
+    position: relative;
+    right: 130px;
+}
+.btn-novo2{
+    background-color: #3d8afc;
+    position: relative;
+    color: white;
+    top: 50px;
+    display: none;
+    width: 100px;
+    margin: auto;
+}
+.incluirPedido{
+    position: absolute;
+    right: -100px;
+    padding: 0;
+    margin: auto;
+    right: 30px;
+}
+.incluirchamados{
+    position: relative;    
+    right: -98px;
+}
+.btns-home{
+    position: relative;
+    top :70px;
+    right:220px;
+}
+.btn-filtar{
+    position: relative;
+    position: relative;
+    color: black;
+    top: 65px;
+    margin: auto;
+}
+
+.voltaTopo{
+    width: 30px;
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    background-color: #0d6efd;
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+}
+#topo1{
+    position: fixed;
+    right:10px;
+    bottom: 10px;   
+}
+.voltaTopo:hover{
+    color: rgb(66, 64, 64);
+}
+.voltaTopo2{
+    display: none;
+   
+}
+.btn-home{
+    bottom: -10px;
+}
+.fotoLogo{
+    background-repeat: no-repeat;
+    background-position:left ;
+    height: 30px;
+    width: auto;
+    position: absolute;
+    background-size: 100%; 
+    left: 15px; 
+} 
+form label{
+    float: left;
+}
+.input-topo{
+    text-align: left;
+}
+
+.filter-div{
+    width: auto;
+    z-index: 2;
+    display: block;
+    height: 40px;
+    margin:auto ;
+    position: absolute;
+    top: 148px;
+    margin-left: 1px;
+    color: black;
+    padding: 5px;
+    font-size: 16px;  
+    background-color: white; 
+}
+.filter{
+    border: 1px solid rgba(75, 71, 71, 0.295);
+    border-radius: 10%;
+    padding: 2px; 
+    box-shadow: rgba(97, 94, 94, 0.24) 0px 1px 1px;
+    padding: 2px 5px;
+    cursor: pointer;
+    color: black;
+}
+.main h6{
+    color: black;
+    top: 20px;
+    position: relative;
+}
+.fechar-modal{
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 1;
+    color: black;
+    z-index: 4;
+}
+.editar-detalhe{
+    margin:4px;
+    background-color: #4CAF50;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.815);
+    padding: 2px 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.editarPedidoProduto{
+    height: 30px;
+    width: 35px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.815);
+    padding: 4px 8px;
+    position: relative;
+    top:20px
+    }
+
+.SalvarPedidoProduto{
+    width: auto;
+    height: 35px;
+    padding: auto;
+    position: relative;
+    top:20px
+}
+.DeletePedidoProduto{
+    width: auto;
+    height: 35px;
+    padding: auto;
+    position: relative;
+    top:20px
+}
+.editarPedidoProduto i, .SalvarPedidoProduto i, .DeletePedidoProduto i{ 
+    font-size: 20px;
+}
+.SalvarPedidoProduto i:hover{ 
+   color:black;
+}
+.editarPedidoProduto i:hover{ 
+    color:black;
+ }
+.DeletePedidoProduto i:hover{ 
+    color:black;
+}
+.pesquisaProduto{
+    overflow: auto;
+    overflow-x:hidden;
+    max-height: 200px;
+    width: 100%;
+    height:auto;
+    border:1px solid rgb(126, 122, 122);
+    position:absolute;
+    z-index: 3;
+    background-color: rgb(230, 222, 222);
+    left:23px;
+    padding: 0;
+}
+.pesquisaProduto label:hover{
+    background-color: white;
+}
+.pesquisaProduto label{
+   width:110%;
+   margin-left: -12px;
+   padding-left: 8px;
+   cursor: pointer;
+}
+
+.list-produto label{
+    overflow: hidden;
+}
+
+.remover-detalhe{
+    margin:4px;
+    background-color:  #ff1100af;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.815);
+    padding: 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.detalhes{
+    cursor: pointer;
+    color: black;
+    margin-left:5px;
+    position: relative; 
+    cursor: pointer;
+}
+.detalhes i{
+    cursor: pointer;
+    color: black;
+    margin-left:10px;
+    font-size: 18px;
+}
+.compras{
+    position: relative;
+    bottom:-10px;
+}
+.remover-detalhe:hover{
+    background-color: #ad352cd3;
+    color: black;
+}
+.editar-detalhe:hover{
+    background-color: #3e9140f3;
+    color: black;
+}
+.input-border {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    padding: none;   
+    font-size: 18px;
+    background-color: rgb(233, 239, 240);
+}
+.list-produto{
+    margin-top: 10px; 
+    z-index: 2;
+}
+.adicionarProduto{
+    background-color: rgba(153, 153, 153, 0.603);
+    color: black;
+    width: 40px;  
+}
+.addproduto{
+    width: 250px;
+    top:5px;
+    display: inline-block;
+    left: 5px;   
+    bottom:20px;  
+    position: relative;
+}
+.deletar1{
+    top:334px;
+    left: 195px;
+    width: 40px;
+    height: 30px;
+    padding: 4px;
+    margin: auto;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(153, 153, 153, 0.603);
+}
+.deletar2, .deletar3, .deletar4, .deletar5, .deletar6, .deletar7, .deletar8, .deletar9, .deletar10, .deletar11, .deletar12, .deletar13 , .deletar14, .deletar15{
+    display: none;  
+}
+.delete2{
+    position: relative;
+    top: -30px;
+}
+.h5-modal{
+    margin-left: 40px;
+    bottom: 20px;
+    position: relative;
+}
+.h5-modal2{
+    margin-left: 180px;
+    bottom: 55px;
+    position: relative;
+}
+.h5-modal3{
+    margin-left: 180px;
+    bottom: 53px;
+    position: relative;
+    display: none;
+}
+.foto-modal{
+    height: 50px;
+}
+
+.modalEditar label{
+    font-size: 15px;
+    margin: auto 0;
+}
+.main h3{
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em rgb(194, 188, 188)
+}
+.logo-main{
+    background-repeat: no-repeat;
+    height: 280px;
+    max-width: 100%;
+    width: auto;
+    margin:auto;
+    position: absolute;
+    left: 110px;
+    right: auto;
+    bottom: 350px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(27, 27, 27));
+    filter: drop-shadow(5px 5px 5px rgb(5, 5, 5)); 
+    opacity: 0.2;
+}
+.salvarProdutos{
+    width: auto;
+    height: 30px;
+    position: relative;
+    top: 18px;
+}
+.produtosSelecionados{
+    background-color: rgb(197, 189, 177);
+    padding: 2px;
+}
+.estoqueAtual{
+    position: relative;
+    top: 20px;
+}
+.estoqueAtual {
+    height: 40px;
+    width: 150px;
+    padding: 0;
+    position: relative;
+    top:10px;
+    left: 10px;
+}
+@media (max-width:1200px){
+    .main{
+        margin-left: 130px;
+    }
+}
+@media (max-width:992px){
+    .estoqueAtual {
+        top: -10px;
+    }
+}
+@media (max-width: 950px){
+    .main{ 
+        margin: auto;
+        margin-top: 30px;
+        width:100%;
+    }
+    .form1 td  {
+        padding:10px 10px;   
+    } 
+    .editar-detalhe, .remover-detalhe{
+        font-size: 14px;
+        padding: 4px 7px;
+    }
+    .filter-div label{
+        font-size:12px ;
+    }
+    .h5-modal2{
+        display: none;
+    }
+    .h5-modal3{
+        display: block;
+    }
+    .pesquisaProduto{
+        width: 200px;
+    }
+    .incluirchamados{
+        top:30px;
+    }
+    .incluirPedido{
+        top:30px;
+    }
+    .modal-chamados{
+        width: 600px;
+        left: -520px;
+    }
+}
+@media (max-width:  767px){
+    .main{
+        margin-top: 30px;
+        height: 600px;
+    }
+    .main2{
+        top:30px;
+    }
+    .btn-novo2{
+        display: block;
+    }
+    
+    .filter-div{   
+        font-size: 12px;
+    }  
+    .form1 th ,td  {
+        padding:10px 8px; 
+        font-size: 15px;  
+    } 
+    .pesquisaProduto{
+        width: 95%;     
+    }
+    .deletar1{
+        top:475px;
+    }
+    .incluirPedido{
+        top: 580px;
+    }
+    .incluirchamados{
+        top: 580px;
+    }
+    .salvarProdutos{      
+        top: -20px;
+        left: 13px;
+    }
+    .main2{
+        margin-top: 0;
+    }
+    .btn-filtar{
+        top: 30px;
+    }
+}
+
+@media (max-width:  740px){
+    .btn-fechar{
+        margin-left:12px;
+    }
+    .main{
+        margin-top: 30px;    
+    }
+    .form1 th ,td  {
+        font-size: 11px; 
+    }
+    .main h3{
+        font-size: 20px;
+    }    
+    .editar-detalhe, .remover-detalhe{
+        font-size: 12px;
+        padding: 3px 6px;
+    } 
+}
+@media (max-width:  600px){
+    .main{
+        margin-top: 40px;
+        padding-top: 10px;
+    }
+   
+    .form1 th ,td  {
+        font-size: 12px;
+    }
+    .filter-div{
+       width: auto;
+       font-size: 8px;
+       text-align: center;
+       margin: auto;
+       margin-top:5px;
+    }
+    .main h6{
+        color: black;
+        top: 5px;
+        position: relative;
+        font-size: 12px;
+    }
+    .main h3{
+        font-size: 15px;
+
+    }.mensagem{
+        width: 300px;
+        height: 100px;
+        left: 25%;
+        text-align: center;
+    }.Modal-Footer button{
+        float: left;
+        
+    }
+}
+@media (max-width:  500px){
+    .filter{
+        margin-top:20px;
+        position: relative;
+        bottom: 10px
+    }
+    .main2{
+        font-size: 13px;
+    }
+    .filter-div{
+        display: block;
+    }
+    .pesquisaProduto{
+        width: 92%;        
+    }
+    .deletar1{
+        top:475px;
+    }  
+    .incluirPedido{
+        top: 640px;
+        right: 120px;
+    }
+    .incluirchamados{
+        top: 590px;
+        left: 60px;
+    }  
+}
+@media(max-width:402px){
+    .incluirPedido{
+        right: 90px;
+    }
+    .incluirchamados{
+        left: 90px;
+    }  
+    
+}
